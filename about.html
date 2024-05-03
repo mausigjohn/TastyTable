@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>webIQ</title>
+
+    </head>
+    <style>
+        *{
+            padding: auto;
+            margin: auto;
+        }
+        .content .list{
+            display: flex;
+            justify-content: center;
+            margin-bottom: -70px;
+        }
+        .content .list a{
+            color: #ffffff;
+            margin: 0px 15px;
+            transition: .3s ease-in-out;
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: 600;
+            position: relative;
+            text-decoration: none;
+        }
+        .content .list a::after{
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            width: 0%;
+            height: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #d4a373;
+            transition: .4s ease-in-out;
+        }
+        .content .list a:hover::after{
+            width: 100%;
+        }
+        .content .list a:first-child{
+            color: #d4a373;
+        }
+        body{
+            background-color: rgb(28, 28, 44);
+        }
+        
+        .container{
+            margin: 20px 40px;
+            color: white;
+        }
+        .heading{
+            font-size: 60px;
+            color: white;
+            text-align: center;
+            
+        }
+        
+        .profiles{
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+            padding: 20px;
+        }
+        .profile{
+            flex-basis: 260px;
+        }
+        .profile .profile-img{
+            height: 260px;
+            width: 260px;
+            border-radius: 50%;
+            filter: grayscale(100%);
+            cursor: pointer;
+            transition: 400ms;
+        }
+        .profile:hover .profile-img{
+            filter: grayscale(0);
+        }
+        .user-name{
+            margin-top: 30px;
+            font-size: 35px;
+        }
+        .profile h5{
+            font-size: 18px;
+            font-weight: 100;
+            letter-spacing: 3px;
+            color: white;
+        }
+        .profile p{
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: justify;
+        }
+        @media only screen and (max-width: 1150px){
+            .profile{
+                flex-direction: column;
+            }
+            .profile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile p{
+                text-align: center;
+                margin: 20px 60px 80px 60px;
+                font-size: 20px;
+            }
+        }
+        @media only screen and (max-width: 900px){
+            .heading{
+                font-size: 40px;
+                color: white;
+                text-align: center;
+            }
+            .heading span{
+                font-size: 20px 0;
+            }
+            .profile p{
+                margin: 20px 10px  80px 10px;
+            }
+        }
+    </style>
+    <body>
+        <div class="container">
+            <h1 class="heading">Members</h1>
+            <div class="content">
+                <div class="list">
+                    <a href="mainpage.html" data-color=".All">Home</a>
+                    <a href="Appetizer.html" data-color=".featured">Appetizers</a>
+                    <a href="Entrees.html" data-color=".Special">Entrees</a>
+                    <a href="Sides.html" data-color=".Arrivals">Sides</a>
+                    <a href="Dessert.html" data-color=".Desserts">Desserts</a>
+                    <a href="Beverages.html" data-color=".Beverages">Beverages</a>
+                    <a href="About.html" data-color=".About">About</a>
+                    <a href="faqs.html" data-color=".faqs">Faqs</a>
+                </div>
+              
+            <div class="profiles">
+            <div class="profile">
+                <img src="jo.png" class="profile-img">
+
+                <h3 class="user-name">John Rique<br>Barnachea</h3>
+                <h5>Main Page/entrees</h5>
+                <p>My contribution is making a main page for our webite making an visually stunning and user-friendly layout for the website's main page.</p>
+            </div>
+
+        <div class="profiles">
+            <div class="profile">
+                <img src="aron.png" class="profile-img">
+
+                <h3 class="user-name">Aaron Diaz</h3>
+                <h5>creative direct</h5>
+                <p>I did the buttons, like the add to cart, buy now, and delete buttons. I also did the food menu template, in which you can choose and buy the food that you want in our shop, named Tasty Table.</p>
+            </div>
+
+            <div class="profiles">
+                <div class="profile">
+                    <img src="doto.png" class="profile-img">
+    
+                    <h3 class="user-name">John Francis Dotollo</h3>
+                    <h5>creative direct</h5>
+                    <p>I created website about members by placing their contributions and their pictures and also provided the sides dishes by finding which is 6 pictures of sides dishes.</p>
+                </div>
+                
+                <div class="profiles">
+                    <div class="profile">
+                        <img src="mar.png" class="profile-img">
+        
+                        <h3 class="user-name"><br>Aaron Martin</h3>
+                        <h5>creative direct</h5>
+                        <p>I provided our login/register page for our website. I learned a lot.</p>
+                    </div>
+
+                    <div class="profiles">
+                        <div class="profile">
+                            <img src="maus.png" class="profile-img">
+            
+                            <h3 class="user-name">Johnpaul Mausig</h3>
+                            <h5>Design/Faqs</h5>
+                            <p>-I provided the Design of our website by finding which background and color theme will work and what we're going to use, and also the FAQs page, and gave each of our members last part of contributions which is the different kinds of foods that you will typically order.</p>
+                        </div>
+                </div>
+    </body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+        @keyframes transitionIn{
+
+            from{
+                opacity: 0;
+                transform: rotateX(-10deg);
+            }
+            to{
+                opacity: 1;
+                transform: rotateX(0);
+            }
+        }
+        
+        .main{
+            padding: 20px;
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        
+        body{
+            margin:-20px;
+            padding: 20px;
+            animation: transitionIn 0.75s;
+            background-image: url(mexican-food.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:cover;
+            box-sizing: border-box;
+            margin: 0px;
+            
+        }
+    
+        .content .list{
+            display: flex;
+            justify-content: center;
+            margin-bottom: -10px;
+        }
+        .content .list a{
+            color: #000;
+            margin: 0px 15px;
+            transition: .3s ease-in-out;
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: 600;
+            position: relative;
+            text-decoration: none;
+        }
+        .content .list a::after{
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            width: 0%;
+            height: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #d4a373;
+            transition: .4s ease-in-out;
+        }
+        .content .list a:hover::after{
+            width: 100%;
+        }
+        .content .list a:first-child{
+            color: #d4a373;
+        }
+        
+        .beef{
+            float: right;
+            height: 300px;
+            width: 300px;
+            margin-top: 100px;
+            margin-right: 50px;
+            border: 5px solid;
+            border-radius: 50%;
+            animation: rotate;
+            animation-delay: 0s ;
+            animation: rotate 30s linear infinite;
+           }
+           @keyframes rotate {
+                0%{ transform: rotate(0deg);}
+                25%{ transform: rotate (90deg);}
+                50%{ transform: rotate(180deg);}
+                100%{ transform: rotate(360deg);}
+
+            }
+        
+            .food{
+            margin: 25px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(92, 84, 84);
+            border-radius: 50px;
+            border-style: outset;
+            margin-right: 50%;
+            padding-left: 15px;
+            box-shadow: 10px 15px 20px;
+            opacity: 85%;
+            
+            }
+            h1{
+                font-family: 'Times New Roman', Times, serif;
+            }
+            
+            
+            .book{
+                background-color:#ff9200;
+                box-shadow: 3px 2px 5px;
+                text-decoration: none;
+                font-size: 19px;
+                border-radius: 19px;
+                margin: 50px;
+                padding: 1%;
+                color: white;
+            }
+            .logo{
+                margin: -25px;
+                padding-top:25px;
+                align-items: center;
+            }
+            .table{
+                text-align: center;
+                color: rgb(37, 33, 33);
+                text-shadow: 2px 1px 2px;
+                font-size: 50px;
+                font-family: Brush Script MT, Brush Script Std, cursive;
+                margin-top: -50px;
+            }
+            span{
+                color: White;
+                background-color: orange;
+                border-radius: 15px;
+                box-shadow: 3px 5px 4px;
+            }
+            .icon{
+                font-size: 30px;
+                margin-left: 20%;
+                margin-top: -15px;
+                position: flex;
+            }
+            .fa-facebook{
+                color: blue;
+            }
+            .fa-twitter{
+                color: rgb(123, 197, 226);
+            }
+            .fa-instagram{
+                color: #ff0090;
+            }
+            footer{
+                text-align: center;
+                font-size: 20px;
+                color: rgb(0, 0, 0);
+            }
+            img{
+                align-items: center;
+            }
+    </style>
+    
+        <body>
+            <main class="main">
+                <h1 class="table">Tasty Table </h1>
+                <img src="logo.png" height="70">
+                <div class="content">
+                    <div class="list">
+                        <a href="mainpage.html" data-color=".All">Home</a>
+                        <a href="Appetizer.html" data-color=".featured">Appetizers</a>
+                        <a href="Entrees.html" data-color=".Special">Entrees</a>
+                        <a href="Sides.html" data-color=".Arrivals">Sides</a>
+                        <a href="Dessert.html" data-color=".Desserts">Desserts</a>
+                        <a href="Beverages.html" data-color=".Beverages">Beverages</a>
+                        <a href="About.html" data-color=".About">About</a>
+                        <a href="faqs.html" data-color=".faqs">Faqs</a>
+                    </div>
+                    <br>
+                <div>
+
+            <img class="beef"src="beef.png">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="food">
+            <h1>Welcome to our shop "<span>Tasty Table </span>"<br>
+             Discover gastronomic delights 
+     <br>   freshness evry bite</h1>
+    
+        <p>
+            Welcome to Tasty Table, where every dish is a culinary delight crafted with love and care. From savory pastries to decadent desserts, we invite you to indulge in a symphony of flavors at our cozy corner eatery.</p>
+       </div>
+            <a class="book"href="#">Book Order</a>
+             <div class="icon">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+         </main>
+         <footer>
+            &copy; Copyrigh all right reserved 2024
+        </footer>
+    </body>
+</html>
